@@ -4129,6 +4129,99 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1328179508
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1271755258711922519, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921678985932029049, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_Text
+      value: Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1226672538}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameMananger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744583561935287921, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_Name
+      value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
 --- !u!1 &1344118000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4711,6 +4804,99 @@ Transform:
   m_Father: {fileID: 910352806}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1569670548
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1271755258711922519, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921678985932029049, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_Text
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1226672538}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameMananger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2609869395382207932, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744583561935287921, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_Name
+      value: RestartButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.115
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386811986034775395, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 58ba5931fec8bbc4c9191be1cfd1f528, type: 3}
 --- !u!1 &1645861179
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,7 +5005,7 @@ PrefabInstance:
       objectReference: {fileID: 1226672538}
     - target: {fileID: 2609869395382207932, guid: 3c5689663f8bd07479cd9f71c8e9f1c2, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 2609869395382207932, guid: 3c5689663f8bd07479cd9f71c8e9f1c2, type: 3}
       propertyPath: ButtonPressed.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4832,6 +5018,10 @@ PrefabInstance:
     - target: {fileID: 3744583561935287921, guid: 3c5689663f8bd07479cd9f71c8e9f1c2, type: 3}
       propertyPath: m_Name
       value: QuitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744583561935287921, guid: 3c5689663f8bd07479cd9f71c8e9f1c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6386811986034775395, guid: 3c5689663f8bd07479cd9f71c8e9f1c2, type: 3}
       propertyPath: m_RootOrder

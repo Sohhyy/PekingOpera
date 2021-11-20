@@ -116,6 +116,16 @@ public class GameMananger : MonoBehaviour
     }
 
 
+    public void StartMainScene()
+    {
+        LoadScene("Final");
+    }
+
+    public void RestartGame()
+    {
+        LoadScene("Title Screen");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

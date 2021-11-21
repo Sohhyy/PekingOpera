@@ -42,7 +42,7 @@ public class ScreenshotCamera : MonoBehaviour
         filename = ScreenShotName(ScreenshotWidth, ScreenshotHeight);
         System.IO.File.WriteAllBytes(filename, bytes);
         Debug.Log(string.Format("Took screenshot to: {0}", filename));
-        SendEmail();
+        //SendEmail();
     }
 
     public static string ScreenShotName(int width, int height) {
@@ -52,7 +52,7 @@ public class ScreenshotCamera : MonoBehaviour
                               System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
     }
 
-    private void SendEmail()
+    public void SendEmail(string TargetEmail)
     {
         SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
         client.Credentials = new System.Net.NetworkCredential(
@@ -67,7 +67,7 @@ public class ScreenshotCamera : MonoBehaviour
             "PekingOperaFace",
             System.Text.Encoding.UTF8);
         // Set destinations for the email message.
-        MailAddress to = new MailAddress("cmsachanggeng@gmail.com");
+        MailAddress to = new MailAddress(TargetEmail);
         // Specify the message content.
         MailMessage message = new MailMessage(from, to);
         message.Body = "This is the Peking Opera Face Mask you draw today. ";

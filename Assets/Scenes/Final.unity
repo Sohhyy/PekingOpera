@@ -5023,7 +5023,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Colorbox: {fileID: 508988506}
-  Button: {fileID: 3553973588164863083}
+  FinishButton: {fileID: 696417448}
+  ShareButton: {fileID: 10818944}
   SurfaceSelector: {fileID: 1781686150}
   Table: {fileID: 0}
   Brush: {fileID: 0}

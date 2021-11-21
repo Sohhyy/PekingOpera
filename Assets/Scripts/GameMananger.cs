@@ -11,7 +11,8 @@ public class GameMananger : MonoBehaviour
     // Start is called before the first frame update
     public static GameMananger Instance = null;
     public GameObject Colorbox;
-    public GameObject Button;
+    public GameObject FinishButton;
+    public GameObject ShareButton;
     public GameObject SurfaceSelector;
     public GameObject Table;
     public GameObject Brush;
@@ -57,7 +58,7 @@ public class GameMananger : MonoBehaviour
         paintcount++;
         if (paintcount == 11)
         {
-            Button.SetActive(true);
+            FinishButton.SetActive(true);
         }
     }
 
@@ -119,7 +120,8 @@ public class GameMananger : MonoBehaviour
         //yield return new WaitForSeconds(1f);
 
         //Hide UI and Take Screenshot
-        Button.SetActive(false);
+        FinishButton.SetActive(false);
+        ShareButton.SetActive(false);
         SurfaceSelector.SetActive(false);
         screenshotCamera.TakeScreenshot();
         //Leave scene
@@ -193,6 +195,27 @@ public class GameMananger : MonoBehaviour
 
     }
 
+    public void ShareButtonFunction()
+    {
+        SurfaceSelector.SetActive(false);
+        FinishButton.SetActive(false);
+        ShareButton.SetActive(false);
+        screenshotCamera.TakeScreenshot();
+        keyboard.ShowKeyboard();
 
-  
+
+    }
+
+
+    public void CloseShareButtonFunction()
+    {
+        SurfaceSelector.SetActive(true);
+        FinishButton.SetActive(true);
+        ShareButton.SetActive(true);
+        screenshotCamera.SendEmail("11");
+        keyboard.HideKeyboard();
+
+
+    }
+
 }

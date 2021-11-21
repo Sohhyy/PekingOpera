@@ -1,8 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.Experimental.UI;
+
 
 public class GameMananger : MonoBehaviour
 {
@@ -20,8 +22,10 @@ public class GameMananger : MonoBehaviour
     public GameObject dialog2;
     public GameObject dialog3;
     public ScreenshotCamera screenshotCamera;
+    public MixedRealityKeyboard keyboard;
+    private object mail;
 
-     private void Awake()
+    private void Awake()
     {
         if (Instance != null && Instance != this)
         {
@@ -36,13 +40,13 @@ public class GameMananger : MonoBehaviour
     {
         paintcount = 0;
         flag = true;
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Final"&&flag)
+        if (SceneManager.GetActiveScene().name == "Final" && flag)
         {
             StartGame();
             flag = false;
@@ -67,7 +71,7 @@ public class GameMananger : MonoBehaviour
         StartCoroutine(Endding());
     }
 
-    public void LoadScene( string  name)
+    public void LoadScene(string name)
     {
         SceneManager.LoadScene(name);
     }
@@ -78,10 +82,10 @@ public class GameMananger : MonoBehaviour
         yield return new WaitForSeconds(1f);
         SoundMgr.Instance.PlayDialogue();
         //yield return new WaitForSeconds(1f);
-        
+
         dialog1.SetActive(true);
         yield return new WaitForSeconds(5f);
-        
+
         dialog1.SetActive(false);
         dialog2.SetActive(true);
         yield return new WaitForSeconds(3f);
@@ -99,7 +103,8 @@ public class GameMananger : MonoBehaviour
             }
 
         }
-
+        keyboard.ShowKeyboard();
+        //SendEmail();
 
     }
     IEnumerator Endding()
@@ -110,9 +115,9 @@ public class GameMananger : MonoBehaviour
         //Table.SetActive(false);
         SoundMgr.Instance.StopBGM();
         SoundMgr.Instance.PlayDialogue();
-        yield return new WaitForSeconds(SoundMgr.Instance.dialogues[SoundMgr.Instance.dialogueIndex - 1].length+1f);
+        yield return new WaitForSeconds(SoundMgr.Instance.dialogues[SoundMgr.Instance.dialogueIndex - 1].length + 1f);
         //yield return new WaitForSeconds(1f);
-        
+
         //Hide UI and Take Screenshot
         Button.SetActive(false);
         SurfaceSelector.SetActive(false);
@@ -145,12 +150,12 @@ public class GameMananger : MonoBehaviour
         float increment = smoothness / duration; //The amount of change to apply.
         while (progress < 1)
         {
-            
-            i.color = Color.Lerp(new Color(i.color.r,i.color.g,i.color.b,1), new Color(i.color.r, i.color.g, i.color.b, 0), progress);
+
+            i.color = Color.Lerp(new Color(i.color.r, i.color.g, i.color.b, 1), new Color(i.color.r, i.color.g, i.color.b, 0), progress);
             progress += increment;
             yield return new WaitForSeconds(smoothness);
         }
-        
+
     }
 
     IEnumerator Appear(Material i, float smoothness, float duration)
@@ -176,7 +181,7 @@ public class GameMananger : MonoBehaviour
         //    if (child.GetComponent<MeshRenderer>()!=null){
         //        StartCoroutine(Transparent(child.GetComponent<MeshRenderer>().material, 0.01f, 2f));
         //    }
-            
+
         //}
 
     }
@@ -184,11 +189,10 @@ public class GameMananger : MonoBehaviour
     public void StartAppear(GameObject i)
     {
         StartCoroutine(Appear(i.GetComponent<MeshRenderer>().material, 0.01f, 2f));
-        
+
 
     }
 
 
-
-
+  
 }

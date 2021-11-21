@@ -40,7 +40,7 @@ public class Brush : MonoBehaviour
                 if(surfacesPainted >= 11)
                 {
                     FinishButton.SetActive(true);
-                    ShareButton.SetActive(true);
+                    //ShareButton.SetActive(true);
                 }
             }
         }

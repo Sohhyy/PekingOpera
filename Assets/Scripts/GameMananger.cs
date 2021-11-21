@@ -53,10 +53,8 @@ public class GameMananger : MonoBehaviour
             StartGame();
             flag = false;
         }
-        if (keyboard.Visible)
-        {
-            Input.text = keyboard.Text;
-        }
+
+        
     }
     public void AddPaintCount()
     {
@@ -128,7 +126,8 @@ public class GameMananger : MonoBehaviour
         FinishButton.SetActive(false);
         ShareButton.SetActive(false);
         SurfaceSelector.SetActive(false);
-        screenshotCamera.TakeScreenshot();
+        //screenshotCamera.TakeScreenshot();
+        //screenshotCamera.SendEmail("weijchen0919@gmail.com");
         //Leave scene
         LoadScene("Endding Scene");
 
@@ -202,13 +201,15 @@ public class GameMananger : MonoBehaviour
 
     public void ShareButtonFunction()
     {
-        keyboard.HideKeyboard();
+        //keyboard.HideKeyboard();
+
         SurfaceSelector.SetActive(false);
         FinishButton.SetActive(false);
         ShareButton.SetActive(false);
         screenshotCamera.TakeScreenshot();
+        screenshotCamera.SendEmail("bokangw@andrew.cmu.edu");
         keyboard.ShowKeyboard();
-         
+        Input.text = keyboard.Text;
 
     }
 

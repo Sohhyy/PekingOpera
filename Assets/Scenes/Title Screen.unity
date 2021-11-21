@@ -442,7 +442,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Colorbox: {fileID: 0}
-  Button: {fileID: 0}
+  FinishButton: {fileID: 0}
+  ShareButton: {fileID: 0}
   SurfaceSelector: {fileID: 0}
   Table: {fileID: 0}
   Brush: {fileID: 0}
@@ -450,6 +451,8 @@ MonoBehaviour:
   dialog1: {fileID: 0}
   dialog2: {fileID: 0}
   dialog3: {fileID: 0}
+  screenshotCamera: {fileID: 0}
+  keyboard: {fileID: 0}
 --- !u!4 &1226672539
 Transform:
   m_ObjectHideFlags: 0
@@ -817,7 +820,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: f073e63f63a4b7147a0f1981aa48f9f9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

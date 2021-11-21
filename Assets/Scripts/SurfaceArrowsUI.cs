@@ -8,6 +8,7 @@ public class SurfaceArrowsUI : MonoBehaviour
     public Material[] SurfaceMaterials;
     public GameObject Display;
     public GameObject FinishButton;
+    //public GameObject ShareButton;
 
     private int surfaceIndex = 0;
     private Renderer myRenderer;

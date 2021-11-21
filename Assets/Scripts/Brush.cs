@@ -6,6 +6,7 @@ public class Brush : MonoBehaviour
 {
 
     public GameObject FinishButton;
+    public GameObject ShareButton;
     public int surfacesPainted = 0;
 
     // Start is called before the first frame update
@@ -39,6 +40,7 @@ public class Brush : MonoBehaviour
                 if(surfacesPainted >= 11)
                 {
                     FinishButton.SetActive(true);
+                    ShareButton.SetActive(true);
                 }
             }
         }

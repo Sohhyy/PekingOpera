@@ -103,7 +103,7 @@ public class GameMananger : MonoBehaviour
             }
 
         }
-        keyboard.ShowKeyboard();
+        //keyboard.ShowKeyboard();
         //SendEmail();
 
     }

@@ -19,6 +19,7 @@ public class GameMananger : MonoBehaviour
     public GameObject dialog1;
     public GameObject dialog2;
     public GameObject dialog3;
+    public ScreenshotCamera screenshotCamera;
 
      private void Awake()
     {
@@ -111,6 +112,12 @@ public class GameMananger : MonoBehaviour
         SoundMgr.Instance.PlayDialogue();
         yield return new WaitForSeconds(SoundMgr.Instance.dialogues[SoundMgr.Instance.dialogueIndex - 1].length+1f);
         //yield return new WaitForSeconds(1f);
+        
+        //Hide UI and Take Screenshot
+        Button.SetActive(false);
+        SurfaceSelector.SetActive(false);
+        screenshotCamera.TakeScreenshot();
+        //Leave scene
         LoadScene("Endding Scene");
 
     }

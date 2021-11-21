@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Experimental.UI;
+using TMPro;
 
 
 public class GameMananger : MonoBehaviour
@@ -25,7 +26,7 @@ public class GameMananger : MonoBehaviour
     public ScreenshotCamera screenshotCamera;
     public MixedRealityKeyboard keyboard;
     private object mail;
-
+    public TextMeshPro Input;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -51,6 +52,10 @@ public class GameMananger : MonoBehaviour
         {
             StartGame();
             flag = false;
+        }
+        if (keyboard.Visible)
+        {
+            Input.text = keyboard.Text;
         }
     }
     public void AddPaintCount()
@@ -197,12 +202,13 @@ public class GameMananger : MonoBehaviour
 
     public void ShareButtonFunction()
     {
+        keyboard.HideKeyboard();
         SurfaceSelector.SetActive(false);
         FinishButton.SetActive(false);
         ShareButton.SetActive(false);
         screenshotCamera.TakeScreenshot();
         keyboard.ShowKeyboard();
-
+         
 
     }
 
@@ -212,7 +218,7 @@ public class GameMananger : MonoBehaviour
         SurfaceSelector.SetActive(true);
         FinishButton.SetActive(true);
         ShareButton.SetActive(true);
-        screenshotCamera.SendEmail("11");
+        screenshotCamera.SendEmail(keyboard.Text);
         keyboard.HideKeyboard();
 
 
